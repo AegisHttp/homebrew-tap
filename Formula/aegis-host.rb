@@ -11,9 +11,14 @@ class AegisHost < Formula
     system "cargo", "install", *std_cargo_args
   end
 
+  def post_install
+    system "#{bin}/aegis-host", "--install"
+  end
+
   def caveats
     <<~EOS
-      To register the native messaging host with your browsers, run:
+      The native messaging host has been automatically registered with your browsers.
+      If you need to re-register it at any time, simply run:
         aegis-host --install
     EOS
   end

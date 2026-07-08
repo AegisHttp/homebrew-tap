@@ -19,10 +19,10 @@ brew install aegis-host
 
 ## Post-Installation Setup
 
-Once installed, you must register the native messaging host manifest for your browsers:
+The installation automatically registers the native messaging host for your browsers. No manual setup is needed!
+
+If you need to re-register it at any time, simply run:
 
 ```bash
 aegis-host --install
 ```
-
-This will automatically write the required JSON manifests to your browser's native messaging hosts configuration directory.
