@@ -1,8 +1,8 @@
 class AegisHost < Formula
   desc "Aegis Http Native Messaging host for GPG bridging"
   homepage "https://github.com/AegisHttp/native-host-rust"
-  url "https://github.com/AegisHttp/native-host-rust/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "9f2e652e0f29bec60bb34d11e51abd9b5fa13c90e58f15ba51820100a03ced10"
+  url "https://github.com/AegisHttp/native-host-rust/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "dd6ed594615ed95b1077051817010d6bdac31c7aadd9aeb7906b334d86dfb1ef"
 
   depends_on "rust" => :build
   depends_on "gnupg"
